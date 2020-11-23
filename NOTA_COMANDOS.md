@@ -54,7 +54,7 @@ Un sistema que registra los cambios realizados sobre un archivo o conjunto de ar
 
 Git es un Sistema de Control de Versiones Distribuido.
 
-Git fue creado por Linus Torvals
+Git fue creado por Linus Torvalds
 
 <div align="right">
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
@@ -63,7 +63,7 @@ Git fue creado por Linus Torvals
 ## Beneficios de Git
 
 * `Velocidad` Puedes trabajar fluidamente desde tu computador.
-* `Diseño sencillo` El codigo es robusto con las herramientas necesarias, como viajar en el tiempo.
+* `Diseño sencillo` El código es robusto con las herramientas necesarias, como viajar en el tiempo.
 * `Fuerte apoyo en el desarrollo no lineal` No trabaja de manera lineal, la linea del tiempo tiene bifurcaciones de manera independiente al proyecto principal.
 * `Completamente distribuido` Cada quien puede tener una copia del proyecto.
 * `Capaz de manejar grandes proyectos` Linux, Django, Laravel, etc. Usan git.
@@ -154,12 +154,12 @@ git config --list
 * `mkdir [nombre]` crear una carpeta.
 * `ls` lista todos los directorios.
   * `-a` muestra los archivos ocultos.
-* `clear` limpia la vetnana.
+* `clear` limpia la ventana.
 * `touch [archivo]` crear un archivo.
 * `rm [ruta]` borra un archivo.
 * `rm -rf [carpeta]` borra una carpeta.
 * `vim [nombre]` editar un archivo de texto.
-* `:wq` guaradar y salirdel archivo de texto.
+* `:wq` guardar y salir del archivo de texto.
 
 ###  Todos los Comandos de terminal
 https://github.com/INFINITY-RUBER/CursosPlatzi/tree/master/Introducci%C3%B3n%20a%20Terminal%20y%20L%C3%ADnea%20de%20Comandos
@@ -193,7 +193,7 @@ https://github.com/INFINITY-RUBER/CursosPlatzi/tree/master/Introducci%C3%B3n%20a
   * `--graph` ver las ramificaciones.
   * `-[numero]` ver los ultimos [numero] commits.
 * `git diff [sha1 del commit]` muestra la diferencias del commit [sha1].
-* `git diff [sha1-1] [sha1-2]` diferencia entre la version 1 vs la version 2.
+* `git diff [sha1-1] [sha1-2]` diferencia entre la versión 1 vs la version 2.
 * `git reset`
   * `--soft [sha1]` borrar todos los commits posteriores a [sha1]. Los archivos que salen del repositorio son pasados al staging area.
   * `--mixed [sha1]` borrar todos los commits posteriores a [sha1]. Los archivos que salen del repositorio son pasados al working directory
@@ -232,7 +232,7 @@ Si se desea eliminar el repositorio, solo hay que eliminar la carpeta oculta .gi
 * **`git stash branch nombre_de_rama`** : Crea una rama y aplica el stash mas reciente.
 * **`git stash branch nombre_de_rama stash@{num_stash}`** : Crea una rama y aplica el stash especificado.
 * `git cherry pick [sha1]` mover el commit [sha1] de otro branch al branch actual
-* **`git clean --dry-run`**: Para saber qué archivos vamos a borrar cuando estan repetidos o no son de nuestro proyecto
+* **`git clean --dry-run`**: Para saber qué archivos vamos a borrar cuando están repetidos o no son de nuestro proyecto
 * **`git clean -f`**: Para borrar todos los archivos listados (que no son carpetas y lo que esta en .gitignore)
 
 <div align="right">
@@ -240,7 +240,7 @@ Si se desea eliminar el repositorio, solo hay que eliminar la carpeta oculta .gi
 </div>
 
 ##  Recuperar ramas borradas (Git)
-* **`git reflog`**: Para recuperar una rama que haya sido eliminada necesitamos el hash ultimo commit hecho en dicha rama. Para eso   usamos git reflog. Buscamos el hash y lo copiamos. ej: git checkout -b cabecera hash_del_utlimo_commit_de_cabecera
+* **`git reflog`**: Para recuperar una rama que haya sido eliminada necesitamos el hash último commit hecho en dicha rama. Para eso usamos git reflog. Buscamos el hash y lo copiamos. ej: git checkout -b cabecera hash_del_utlimo_commit_de_cabecera
 Ya habiendo obtenido el hash lo que hacemos sera volver a crear la rama pero le agregamos el hash al final.
 
 <div align="right">
@@ -248,14 +248,14 @@ Ya habiendo obtenido el hash lo que hacemos sera volver a crear la rama pero le 
 </div>
 
 ## comandos especiales (Git)
-* **`git shortlog`**: Ver cuantos commits a hecho los miembros del equipo
+* **`git shortlog`**: Ver cuántos commits a hecho los miembros del equipo
 * **`git shortlog -sn`**: Las personas que han hecho ciertos commits
 * **`git shortlog -sn --all`**: Todos los commits (también los borrados)
-* **`git shortlog -sn --all --no-merges`**: muestra las estadisticas de los comigs del repositorio donde estoy
+* **`git shortlog -sn --all --no-merges`**: muestra las estadísticas de los commits del repositorio donde estoy
 * **`git config --global alias.stats “shortlog -sn --all --no-merges”`**: configura el comando “shortlog -sn --all --no-merges” en un Alias en las configuraciones globales de git del pc
-* **`git blame -c blogpost.html`**: Muestra quien ha hecho cambios en dicho archivo identado
+* **`git blame -c blogpost.html`**: Muestra quién ha hecho cambios en dicho archivo indicado
 * **`git blame --help`**: Muestra en el navegador el uso del comando
-* **`git blame archivo -L 35, 60 -c`**: Muestra quien escribio el codigo con informacion de la linea 35 a la 60, EJ: `git blame css/estilos.css -L 35, 60 -c`
+* **`git blame archivo -L 35, 60 -c`**: Muestra quién escribio el codigo con información de la linea 35 a la 60, EJ: `git blame css/estilos.css -L 35, 60 -c`
 * **`git branch -r`**: Muestra las Ramas remotas de GitHub
 * **`git branch -a`**: Muestra todas las Ramas del repo y remotas de GitHub 
 
